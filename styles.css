@@ -159,15 +159,6 @@ section {
     margin-right: 10px;
 }
 
-/* .svg-site-nav:hover {
-    fill: var(--accent-color);
-}
-
-.item .item-address .site-nav:hover,
-.item .item-address .site-nav:focus {
-    color: var(--accent-color);
-} */
-
 
 .site-nav {
     display: flex;
@@ -183,9 +174,6 @@ section {
     fill: var(--accent-color);
 }
 
-.list.header-nav.adress .item .site-nav {
-    margin-left: 10px;
-}
 
 /* section hero */
 
@@ -677,7 +665,7 @@ section .button {
 
 .social-main {
     margin-left: 70px;
-    margin-top: 12px;
+    align-items: baseline;
 }
 
 .social-main .social-footer {
