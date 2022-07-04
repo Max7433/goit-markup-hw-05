@@ -54,7 +54,7 @@
                 <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
                 <div class="hero-backdrop is-hidden" data-modal>
                     <div class="hero-modal">
-                        <button class="modal-close" data-modal-close>закрыть</button>
+                        <button class="modal-close" data-modal-close>X</button>
                     </div>
                 </div>
             </div>
@@ -115,11 +115,18 @@
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="item">
+                    <li class="item" lang="ru">
                         <img src="./images/img-a.jpeg" alt="планшет и клавиатура" width="370" />
+                        <div class="overlay">
+                            <p class="item">Десктопные приложения</p>
+                        </div>
                     </li>
-                    <li class="item"><img src="./images/img-b.jpeg" alt="ноутбук и телефон" width="370" /></li>
-                    <li class="item"><img src="./images/img-c.jpeg" alt="планшет с рисунком" width="370" /></li>
+                    <li class="item"><img src="./images/img-b.jpeg" alt="ноутбук и телефон" width="370" /><div class="overlay">
+                            <p class="item">Мобильные приложения</p>
+                        </div></li>
+                    <li class="item"><img src="./images/img-c.jpeg" alt="планшет с рисунком" width="370" /><div class="overlay">
+                            <p class="item">Дизайнерские решения</p>
+                        </div></li>
                 </ul>
             </div>
         </section>
