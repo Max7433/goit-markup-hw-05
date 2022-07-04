@@ -225,6 +225,38 @@ section {
     color: var(--fontcolor);
 }
 
+.hero-backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hero-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 1024px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-modal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-65%, -55%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--backgroundcolor-header);
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* section-peculiarities */
 .peculiarities .container .list-p {
     display: flex;
