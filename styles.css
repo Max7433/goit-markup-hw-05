@@ -10,7 +10,7 @@
     --fontcolor-main: #757575;
     --fontcolor-secondary: #212121;
     --fontcolor: #ffffff;
-    --timing: 2500ms cubic-bezier(0.4, 0, 0.2, 1)
+    --timing: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 
@@ -275,8 +275,7 @@ section {
     background-color: var(--backgroundcolor-header);
     border-radius: 4px;
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 3;
+    transition: opacity 250ms var(--timing) z-index: 3;
 }
 
 .modal-close {
