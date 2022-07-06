@@ -603,7 +603,8 @@ section.team .container .list .team-card:not(:last-child) {
     overflow: hidden;
 }
 
-.card-link:hover .card-overlay:before {
+.card-link:hover .card-overlay:before,
+.card-link:focus .card-overlay:before {
     display: block;
     content: "";
     position: absolute;
@@ -651,7 +652,8 @@ section.team .container .list .team-card:not(:last-child) {
 
 }
 
-.card-link:hover .overlay-text {
+.card-link:hover .overlay-text,
+.card-link:focus .overlay-text {
     display: block;
     content: "";
     position: absolute;
