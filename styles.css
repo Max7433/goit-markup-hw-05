@@ -269,7 +269,7 @@ section {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-65%, -55%);
+    transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
     background-color: var(--backgroundcolor-header);
@@ -365,7 +365,9 @@ section.doing .container .list {
 }
 
 .overlay {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0%;
     left: 0%;
     position: absolute;
@@ -377,7 +379,6 @@ section.doing .container .list {
 
 .overlay .item {
 
-    margin-top: 27px;
     text-align: center;
     font-weight: 700;
 
@@ -597,37 +598,11 @@ section.team .container .list .team-card:not(:last-child) {
     margin-bottom: 0px;
 }
 
-.card-data {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 20px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    z-index: 1;
-}
-
-.card-name {
-    margin-bottom: 4px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    color: var(--fontcolor-secondary);
-    letter-spacing: 0.06em;
-    z-index: 1;
-}
-
-.card-text {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.9;
-    color: var(--fontcolor-main);
-    z-index: 1;
-}
-
-
-.card-link {
+/* .card-link {
+    overflow: hidden;
+    position: relative;
+} */
+.card-overlay {
     position: relative;
     overflow: hidden;
 }
@@ -644,7 +619,6 @@ section.team .container .list .team-card:not(:last-child) {
     transform: translateY(0);
     transition: transform var(--timing);
     background-color: rgba(33, 150, 243, 0.9);
-    z-index: 0;
 }
 
 .card-overlay:before {
@@ -658,10 +632,7 @@ section.team .container .list .team-card:not(:last-child) {
     left: 0;
     transform: translateY(100%);
     background-color: rgba(33, 150, 243, 0.9);
-    z-index: 0;
 }
-
-
 
 .overlay-text {
     display: block;
@@ -680,7 +651,7 @@ section.team .container .list .team-card:not(:last-child) {
     line-height: 1.55;
     color: var(--fontcolor);
     transform: translateY(100%);
-    z-index: 0;
+    z-index: 1;
 
 }
 
@@ -702,7 +673,36 @@ section.team .container .list .team-card:not(:last-child) {
     color: var(--fontcolor);
     transform: translateY(0);
     transition: transform var(--timing);
-    z-index: 0;
+    z-index: 1;
+}
+
+.card-data {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    z-index: 2;
+}
+
+.card-name {
+    margin-bottom: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--fontcolor-secondary);
+    letter-spacing: 0.06em;
+    z-index: 2;
+}
+
+.card-text {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--fontcolor-main);
+    z-index: 2;
 }
 
 /* buttons */
