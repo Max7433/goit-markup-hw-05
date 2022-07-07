@@ -261,8 +261,7 @@ section {
     height: 1024px;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity var(--timing);
-    transition: visibility var(--timing);
+    transition: opacity var(--timing), visibility var(--timing);
     z-index: 2;
 }
 
@@ -276,8 +275,7 @@ section {
     background-color: var(--backgroundcolor-header);
     border-radius: 4px;
     opacity: 1;
-    transition: opacity var(--timing);
-    transition: visibility var(--timing);
+    transition: opacity var(--timing), visibility var(--timing);
     z-index: 3;
 }
 
